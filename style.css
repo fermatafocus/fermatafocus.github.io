@@ -15,6 +15,17 @@ body {
 .navbar {
   padding: .8rem;
   background-color: #FFF9EE; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  margin-left: auto !important;
 }
 
 .navbar .nav-link {
