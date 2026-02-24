@@ -1,3 +1,20 @@
+/* Scroll Progress Bar */
+#scrollProgressBarContainer {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: transparent;
+  z-index: 2000;
+}
+
+#scrollProgressBar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #213B51 0%, #213B51 100%);
+  transition: width 0.2s ease;
+}
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Varela:400,500,700');
 
@@ -47,7 +64,8 @@ body {
 }
 
 .descriptions {
-  background-color: #FFF9EE; 
+  background-color: #FFF9EE;
+  color: #213B51; 
   padding: 2rem;
   border-radius: 8px;
   margin-bottom: 2rem;

@@ -14,7 +14,35 @@
 </head>
 
 <body>
-   <!--Nav Bar-->
+  <!--Nav Bar-->
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="elements/logo.png" height="45px" width="175px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon custom-toggler"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="prototype.html">prototype</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="uiprocess.html">ui process</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Progress Scroll Bar -->
+  <div id="scrollProgressBarContainer">
+    <div id="scrollProgressBar"></div>
+  </div>
   <nav class="navbar navbar-expand-md sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="elements/logo.png" height="45px" width="175px"></a>
@@ -42,6 +70,7 @@
 
   <div class="container my-5 d-flex justify-content-center align-items-center">
     <h1 class="text-center header-title">welcome to fermata.</h1>
+    
 </div>
 <div class="container my-5 d-flex justify-content-center align-items-center">
   <h3 class="text-center header-title">pause. focus. resume.</h3>
@@ -52,13 +81,22 @@
 
 <div class="container my-5 d-flex justify-content-center align-items-center descriptions">
   <p class="text-center description-text">fermata is a mobile application which helps users create <b>customized focus sessions</b> with a <b>curated playlist</b> based on the task at hand. </p>
-  </body>
+
 
 </div>
 
   </main>
 
-
+  
+  <!-- Scroll Progress Bar Script -->
+  <script>
+    window.addEventListener('scroll', function() {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (scrollTop / docHeight) * 100;
+      document.getElementById('scrollProgressBar').style.width = scrolled + '%';
+    });
+  </script>
 </body>
 
 <!--- Footer -->
