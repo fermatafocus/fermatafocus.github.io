@@ -26,11 +26,9 @@ html, body {
   padding-top: 70px;
 }
 
+  
+
 body {
-  background-color: #213B51; 
-  color:#fefcf8
-}
-  body {
     background-color: #213B51;
     color: #FFF9EE;
     /* small horizontal padding so content doesn't touch viewport edges */
