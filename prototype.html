@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>fermata - prototype</title>
+  <link rel="shortcut icon" type="image/jpg" href="elements/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Progress Scroll Bar -->
+  <div id="scrollProgressBarContainer">
+    <div id="scrollProgressBar"></div>
+  </div>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="elements/logo.png" height="45px" width="175px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon custom-toggler"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="prototype.html">prototype</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="uiprocess.html">ui process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">about us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+ 
+<div class="container my-2 d-flex justify-content-center align-items-center descriptions compact">
+  <h1 class="mb-0">our prototype</h1>
+</div>
+<br>
+<!-- 2-COLUMN LAYOUT -->
+<div class="container my-5">
+  <div class="row align-items-start justify-content-center">
+
+  <!-- LEFT: TEXT CONTENT -->
+  <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+    <div class="prototype-panel">
+
+      <h3 class="mb-3">what fermata does</h3>
+      <p>
+        fermata creates <b>custom focus sessions</b> with a <b>curated playlist</b>
+        based on the task at hand. the goal is to help students choose audio
+        that supports performance — especially for reading-heavy work.
+      </p>
+
+      <hr>
+
+      <h4 class="mb-3">core features</h4>
+      <ul>
+        <li><b>task selection</b> (reading, problem-solving)</li>
+        <li><b>session timer</b> for structured focus</li>
+        <li><b>curated playlists</b> matched to task</li>
+        <li><b>progress tracking</b> & session history</li>
+      </ul>
+
+      <hr>
+
+      <h4 class="mb-3">research-driven</h4>
+      <p class="mb-0">
+        based on our findings, fermata recommends <b>instrumental or no music</b>
+        for reading comprehension while allowing flexibility for other task types.
+      </p>
+
+    </div>
+  </div>
+
+  <!-- RIGHT: FIGMA EMBED -->
+  <div class="col-12 col-lg-5">
+    <div class="prototype-embed">
+      <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="400" height="650" src="https://embed.figma.com/proto/eNn3fgQAqcZvRyroI8vgUL/INF-172-Prototype---fermata?node-id=1-3&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3&embed-host=share" allowfullscreen></iframe>
+
+    </div>
+
+    <p class="small mt-2 text-muted">
+      click through the prototype or use arrow keys to navigate.
+    </p>
+  </div>
+
+</div>
+
+
+
+
+  
+  <!-- Scroll Progress Bar Script -->
+  <script>
+    window.addEventListener('scroll', function() {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (scrollTop / docHeight) * 100;
+      document.getElementById('scrollProgressBar').style.width = scrolled + '%';
+    });
+  </script>
+</body>
+
+<!--- Footer -->
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <a href="index.html"><img src="elements/logo.png" width="300px" height="50px"></a>
+      </div>
+      <div class="col-md-8 footer-text">
+        <a href="index.html">home</a>
+        <a href="research.html">research</a>
+        <a href="prototype.html">prototype</a>
+        <a href="uiprocess.html">ui process</a>
+        <a href="aboutus.html">about us</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

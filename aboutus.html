@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>fermata - about us</title>
+  <link rel="shortcut icon" type="image/jpg" href="elements/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<div class="container my-2 d-flex justify-content-center align-items-center descriptions compact">
+  <h1 class="mb-0">about us</h1>
+</div>
+
+
+<div class="container my-5 ">
+    
+ <!-- MISSION SECTION -->
+  <div class="row mb-5">
+    <div class="col-lg-8 mx-auto text-center">
+      <h3 class="mb-3">our mission</h3>
+      <p>
+        fermata was created to bridge the gap between academic research and
+        real student study habits. through evidence-based experimentation,
+        we aim to help students make smarter decisions about how music
+        influences concentration and performance.
+      </p>
+    </div>
+  </div>
+  <!-- HERO SECTION -->
+  
+
+ 
+
+  <!-- TEAM SECTION -->
+<div class="descriptions compact">
+    <div class=" mb-5 justify-content-center">
+      <div class="col-lg-8 mx-auto text-center">
+        <br>
+        <h3 class="mb-3">meet the team</h3>
+        <p>
+          we are four uci students studying health informatics,
+          combining research, design, and technology to improve academic focus.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+    <!-- Alyssa -->
+    <div class="col-12 col-md-6 col-lg-3 mb-4">
+      <div class="team-card text-center">
+        <h5>alyssa</h5>
+        <p class="role">technology lead</p>
+        <p>
+          led website development, prototype integration, and technical implementation.
+          ensured research findings were translated into a functional digital solution.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tiffany -->
+    <div class="col-12 col-md-6 col-lg-3 mb-4">
+      <div class="team-card text-center">
+        <h5>tiffany</h5>
+        <p class="role">ux & product lead</p>
+        <p>
+          designed the fermata app interface and user flow.
+          focused on intuitive interaction and student-centered experience.
+        </p>
+      </div>
+    </div>
+
+    <!-- Katarina -->
+    <div class="col-12 col-md-6 col-lg-3 mb-4">
+      <div class="team-card text-center">
+        <h5>katarina</h5>
+        <p class="role">research lead</p>
+        <p>
+          guided literature review, study design, and data interpretation.
+          ensured the project aligned with cognitive and health informatics research.
+        </p>
+      </div>
+    </div>
+
+    <!-- Izza -->
+    <div class="col-12 col-md-6 col-lg-3 mb-4">
+      <div class="team-card text-center">
+        <h5>izza</h5>
+        <p class="role">team lead</p>
+        <p>
+          coordinated project direction, collaboration, and presentation.
+          oversaw integration of research, design, and implementation.
+        </p>
+      </div>
+    </div>
+
+    </div>
+</div>
+
+  <!-- Progress Scroll Bar -->
+  <div id="scrollProgressBarContainer">
+    <div id="scrollProgressBar"></div>
+  </div>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="elements/logo.png" height="45px" width="175px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon custom-toggler"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="prototype.html">prototype</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="uiprocess.html">ui process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">about us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<br>
+<br>
+
+
+
+
+
+  
+  <!-- Scroll Progress Bar Script -->
+  <script>
+    window.addEventListener('scroll', function() {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (scrollTop / docHeight) * 100;
+      document.getElementById('scrollProgressBar').style.width = scrolled + '%';
+    });
+  </script>
+</body>
+
+<!--- Footer -->
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <a href="index.html"><img src="elements/logo.png" width="300px" height="50px"></a>
+      </div>
+      <div class="col-md-8 footer-text">
+        <a href="index.html">home</a>
+        <a href="research.html">research</a>
+        <a href="prototype.html">prototype</a>
+        <a href="uiprocess.html">ui process</a>
+        <a href="aboutus.html">about us</a>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
