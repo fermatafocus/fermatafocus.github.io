@@ -187,7 +187,7 @@ body {
 
   /* Research page stats */
 .stat-box, .mini-stat-box, .callout-box {
-  background: #fbf7ef; /* your cream */
+  background: #fbf7ef; 
   border-radius: 18px;
   padding: 18px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
@@ -196,7 +196,7 @@ body {
 .big-stat {
   font-size: 3rem;
   font-weight: 700;
-  color: #1f3d4d; /* navy */
+  color: #1f3d4d; 
   line-height: 1;
 }
 
