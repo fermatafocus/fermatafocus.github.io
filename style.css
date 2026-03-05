@@ -59,7 +59,7 @@ body {
 }
 
 .navbar .nav-link:hover {
-  color: #213B51;
+  color: #2d5a7b;
 }
 
 .navbar-toggler {
@@ -104,8 +104,7 @@ body {
 }
 
 .footer .footer-text a:hover {
-  color: #FFF9EE; 
-; 
+  color: #2d5a7b; 
 }
 .footer img {
     object-fit: contain; 
