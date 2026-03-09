@@ -15,8 +15,7 @@
   background: linear-gradient(90deg, #213B51 0%, #213B51 100%);
   transition: width 0.2s ease;
 }
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Varela:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Kano:wght@400;500;700&display=swap');
 
 html, body {
   height: 100%;
